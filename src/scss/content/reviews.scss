@@ -1,0 +1,79 @@
+main {
+  .content {
+    .reviews {
+      font-family: $main-font;
+
+      .reviews-header {
+        .reviews-title {
+          font-size: $text-lg-2;
+          font-weight: $fw-semibold;
+          margin-bottom: 0;
+        }
+
+        .reviews-count {
+          font-size: $text-sm;
+          font-weight: $fw-bold;
+        }
+      }
+
+      .review-card {
+        .account-pic {
+          max-width: 56px;
+          max-height: 56px;
+        }
+
+        .review-content {
+          .review-row {
+            @media (max-width: $mobile) {
+              flex-direction: column;
+            }
+
+            .reviews-title {
+              font-size: $text-lg-2;
+              font-weight: $fw-bold;
+              color: $main-dark;
+            }
+
+            .review-date,
+            .review-position {
+              font-size: $text-sm;
+              font-weight: $fw-medium;
+              color: $secondary-dark;
+            }
+
+            .review-comment {
+              font-size: $text-sm;
+              font-weight: $fw-regular;
+              color: $accent-dark;
+            }
+          }
+        }
+      }
+
+      .show-list {
+        .show-text {
+          font-weight: $fw-semibold;
+          color: $secondary-dark;
+          transition: $transition;
+          cursor: pointer;
+          text-align: center;
+          margin: 0;
+        }
+
+        img {
+          transition: $transition;
+        }
+
+        &:hover {
+          color: $main-dark;
+
+          img {
+            color: $main-dark;
+            fill: $main-dark;
+            // transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

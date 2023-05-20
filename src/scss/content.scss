@@ -1,0 +1,13 @@
+// Variables
+@import "./variables";
+
+// Content
+@import "./content/preview";
+@import "./content/reviews";
+@import "./content/viewCars";
+
+main {
+  .content {
+    background: $background;
+  }
+}

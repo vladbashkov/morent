@@ -1,0 +1,149 @@
+// Variables
+@import "./variables";
+
+header {
+  border-bottom: $border;
+
+  .navbar {
+    padding: 40px 0;
+    flex-wrap: nowrap;
+
+    .filter-ad_container {
+      display: none !important;
+    }
+
+    .card {
+      border: $border;
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-items: start !important;
+      padding: 20px 0;
+
+      .logo-container {
+        margin: 30px 0;
+      }
+
+      .nav {
+        display: none !important;
+      }
+
+      .filter {
+        display: none;
+      }
+
+      .filter-ad_container {
+        display: flex !important;
+        border: $border;
+        border-radius: 10px;
+        cursor: pointer;
+
+        .filter-ad {
+          display: flex;
+        }
+      }
+    }
+
+    .navbar-header {
+      display: none;
+
+      .nav-collapse {
+        padding: 5px 15px;
+        margin: 0;
+
+        a {
+          font-size: $text-xl;
+          color: $main-dark;
+          text-transform: uppercase;
+
+          .account-pic_collapse {
+            max-width: 24px;
+          }
+        }
+      }
+
+      @media (max-width: $tablet) {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    .active-notif {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 11px;
+        height: 11px;
+        background: $notif;
+        border-radius: 50%;
+
+        @media (max-width: $tablet) {
+          top: 2.5px;
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+
+    .search {
+      min-width: 30%;
+
+      @media (max-width: $tablet) {
+        min-width: auto;
+        width: 100%;
+      }
+
+      .search-container {
+        padding: 12px 22px;
+        border: $border;
+        border-radius: 70px;
+        margin: 0;
+
+        .search-input {
+          border: none;
+          outline: none;
+        }
+
+        @media (max-width: $tablet) {
+          border-radius: 10px;
+          min-width: auto;
+          width: 100%;
+          padding: 12px;
+        }
+      }
+    }
+
+    .account-pic {
+      max-width: 44px;
+    }
+
+    .nav {
+      flex-wrap: nowrap;
+      justify-self: flex-end;
+
+      @media (max-width: $tablet) {
+      }
+
+      li:last-child {
+        a.mx-2 {
+          margin-right: 0 !important;
+        }
+      }
+
+      .nav-link {
+        border: $border;
+        max-width: 44px;
+
+        &:hover {
+          border: $border-hover;
+        }
+      }
+    }
+  }
+}

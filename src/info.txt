@@ -1,0 +1,13 @@
+Убрать галочку в виде домика, если она есть package.json > "devDependencies": > "webp-converter": "2.2.3";
+Установить все плагины npm i;
+Режим разработчика - npm run dev;
+Если в файле fonts.scss ничего нет нужно его удалить и заново запустить сборку;
+
+Режим билда - npm run build;
+
+Сделать спрайты - npm run svgSprive;
+
+Сделать архив - npm run zip;
+
+Отправить на фтп - npm run deploy
+*Нужно заполнить файл config/ftp.js*

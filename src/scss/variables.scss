@@ -1,0 +1,55 @@
+// Colors
+
+$main-dark: #1a202c;
+$secondary-dark: #90a3bf;
+$accent-dark: #3d5278;
+$accent: #3563e9;
+$fade-text: #94a7cb;
+$background: #f6f7f9;
+$white: #ffffff;
+$notif: #ff4423;
+$footer-black: #131313;
+$footer-text: rgba(19, 19, 19, 0.6);
+
+// Font
+
+$main-font: "Plus Jakarta Sans", sans-serif;
+
+// Font sizes
+
+$text-xs: 12px;
+$text-sm: 14px;
+$text-base: 16px;
+$text-lg: 18px;
+$text-lg-2: 20px;
+$text-xl: 24px;
+$text-xl-2: 32px;
+$text-2xl: 36px;
+$text-3xl: 40px;
+$text-4xl: 72px;
+
+// Font weights
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+// Screen width
+
+$desktop-large: 1960px;
+$desktop: 1650px;
+$laptop: 1450px;
+$tablet-large: 1200px;
+$tablet: 960px;
+$tablet-small: 768px;
+$mobile-large: 640px;
+$mobile: 480px;
+$mobile-small: 360px;
+
+// Other
+
+$border: 1px solid rgba(195, 212, 233, 0.4);
+$border-hover: 1px solid $main-dark;
+$border-footer: 1px solid rgba(19, 19, 19, 0.16);
+$transition: all 0.3s ease-in-out;

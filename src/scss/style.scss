@@ -1,0 +1,41 @@
+// Reset
+@import "./reset";
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+
+// Variables
+@import "./variables";
+
+// Sections
+@import "./header";
+@import "./sidebar";
+@import "./content";
+@import "./footer";
+
+body {
+  font-family: $main-font;
+  letter-spacing: 0.02em;
+
+  .container {
+    width: 90%;
+    max-width: 90%;
+    padding: 0;
+  }
+
+  .faded {
+    animation: faded 1.5s;
+  }
+
+  @keyframes faded {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

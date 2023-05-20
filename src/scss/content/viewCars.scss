@@ -1,0 +1,155 @@
+main {
+  .cars-section {
+    font-family: $main-font;
+
+    .cars-section_title {
+      font-size: $text-base;
+      color: $secondary-dark;
+    }
+
+    .view-btn {
+      color: $accent;
+      font-size: $text-base;
+      font-weight: $fw-semibold;
+      transition: $transition;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    @media (max-width: $mobile-large) {
+      .cars-section_title,
+      .view-btn {
+        margin: 0 !important;
+      }
+    }
+
+    .recent-cars_list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 15px;
+
+      @media (max-width: $tablet-small) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: $mobile-large) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .car-card {
+        .car-card_header {
+          .car-title {
+            color: $main-dark;
+            font-size: $text-base;
+            font-weight: $fw-bold;
+          }
+
+          .car-type {
+            color: $secondary-dark;
+            font-size: $text-sm;
+            font-weight: $fw-bold;
+          }
+
+          .fav-btn_container {
+            .fav-btn {
+              max-width: 20px;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .car-card_image {
+          .car-image {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+
+        &.recentList {
+          .car-image {
+            max-height: 75px;
+          }
+        }
+
+        &.recommendationList {
+          .car-image {
+            max-height: 98px;
+          }
+        }
+
+        .car-card_specification {
+          p.card_specification-text {
+            margin: 0;
+            margin-left: 10px;
+            font-size: $text-sm;
+            color: $secondary-dark;
+          }
+
+          @media (max-width: $tablet-large) {
+            flex-direction: column;
+            align-items: start;
+          }
+
+          @media (max-width: $mobile-large) {
+            flex-direction: row;
+            align-items: center;
+          }
+        }
+
+        .pricing-container {
+          .rent {
+            max-height: 38px;
+          }
+
+          .prices {
+            .pricing {
+              color: $main-dark;
+              font-size: $text-base;
+              font-weight: $fw-bold;
+            }
+
+            .per-day {
+              font-size: $text-sm;
+              color: $secondary-dark;
+              font-weight: $fw-bold;
+            }
+
+            .discount {
+              margin: 0;
+              font-size: $text-sm;
+              color: $secondary-dark;
+              font-weight: $fw-bold;
+              text-decoration: line-through;
+            }
+          }
+
+          @media (max-width: $tablet-large) {
+            flex-direction: column;
+            align-items: center;
+
+            .prices {
+              display: flex;
+              margin-bottom: 10px;
+
+              .discount {
+                margin-left: 10px;
+              }
+            }
+          }
+
+          @media (max-width: $mobile-large) {
+            flex-direction: row;
+            justify-content: space-around !important;
+          }
+
+          @media (max-width: $mobile) {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
