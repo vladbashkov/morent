@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <title>MORENT</title>
+</head>
+
+  <body>
+    <header class="faded">
+  <div class="container">
+    <nav class="navbar align-items-center justify-content-between">
+      <div class="navbar-header align-items-center flex-column">
+        <div class="d-flex w-100 justify-content-between">
+          <button
+            type="button"
+            class="burger-btn"
+            data-toggle="collapse"
+            data-target="#collapseMenu"
+          >
+            <img src="img/menu.svg" alt="Burger menu" />
+          </button>
+          <div class="account-pic_small">
+            <img
+              src="img/account-pic.png"
+              alt="Account Picture"
+              class="account-pic"
+            />
+          </div>
+        </div>
+        <div class="collapse card w-100 mt-3" id="collapseMenu">
+          <ul class="nav-collapse">
+            <li class="my-2">
+              <a href="#" class="d-flex align-items-center">
+                <img src="img/heart.svg" alt="Favorite" class="mr-2" />
+                Favorite
+              </a>
+            </li>
+            <li class="my-2">
+              <a href="#" class="d-flex align-items-center active-notif">
+                <img
+                  src="img/notification.svg"
+                  alt="Notification"
+                  class="mr-2"
+                />
+                Notifications
+              </a>
+            </li>
+            <li class="my-2">
+              <a href="#" class="d-flex align-items-center">
+                <img src="img/setting.svg" alt="Settings" class="mr-2" />
+                Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo-container">
+        <a href="#">
+          <img src="img/Logo.svg" alt="Logo" class="logo mr-2" />
+        </a>
+      </div>
+      <div class="search d-flex">
+        <label class="search-container d-flex" for="search">
+          <img src="img/search.svg" alt="Search" />
+          <input
+            type="text"
+            class="search-input mx-3"
+            id="search"
+            placeholder="Search something here"
+          />
+          <img src="img/filter.svg" alt="Filter" class="filter" />
+        </label>
+        <div
+          class="filter-ad_container ml-2 p-2 d-flex align-items-center justify-content-center"
+        >
+          <img src="img/filter.svg" alt="Filter" class="filter-ad" />
+        </div>
+      </div>
+      <ul class="nav align-items-center">
+        <li class="mx-2">
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center nav-link px-3 rounded-circle"
+          >
+            <img src="img/heart.svg" alt="Favorite" />
+          </a>
+        </li>
+        <li class="mx-2">
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center nav-link active-notif px-3 rounded-circle"
+          >
+            <img src="img/notification.svg" alt="Notification" />
+          </a>
+        </li>
+        <li class="mx-2">
+          <a
+            href="#"
+            class="d-flex align-items-center justify-content-center nav-link px-3 rounded-circle"
+          >
+            <img src="img/setting.svg" alt="Settings" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="d-flex rounded-circle mx-2">
+            <img
+              src="img/account-pic.png"
+              class="account-pic"
+              alt="Account Picture"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+    <main class="d-flex faded">
+      <div class="nav-sidebar">
+  <div class="sidebar-section">
+    <p class="section-title">type</p>
+    <ul class="section-inputs">
+      <li class="inputs-li">
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck_1"
+            checked
+          />
+          <label class="custom-control-label" for="customCheck_1">
+            Sport <span class="quantity">(10)</span>
+          </label>
+        </div>
+      </li>
+      <li class="inputs-li">
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck_2"
+            checked
+          />
+          <label class="custom-control-label" for="customCheck_2">
+            SUV <span class="quantity">(12)</span>
+          </label>
+        </div>
+      </li>
+      <li class="inputs-li">
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck_3"
+          />
+          <label class="custom-control-label" for="customCheck_3">
+            MPV <span class="quantity">(16)</span>
+          </label>
+        </div>
+      </li>
+      <li class="inputs-li">
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck_4"
+          />
+          <label class="custom-control-label" for="customCheck_4">
+            Sedan <span class="quantity">(20)</span>
+          </label>
+        </div>
+      </li>
+      <li class="inputs-li">
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck_5"
+          />
+          <label class="custom-control-label" for="customCheck_5">
+            Coupe <span class="quantity">(14)</span>
+          </label>
+        </div>
+      </li>
+      <li class="inputs-li">
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck_6"
+          />
+          <label class="custom-control-label" for="customCheck_6">
+            Hatchback <span class="quantity">(14)</span>
+          </label>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <p class="section-title">capacity</p>
+    <ul class="section-inputs">
+      <li class="inputs-li">
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck_7"
+            checked
+          />
+          <label class="custom-control-label" for="customCheck_7">
+            2 Person <span class="quantity">(10)</span>
+          </label>
+        </div>
+      </li>
+      <li class="inputs-li">
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck_8"
+          />
+          <label class="custom-control-label" for="customCheck_8">
+            4 Person <span class="quantity">(12)</span>
+          </label>
+        </div>
+      </li>
+      <li class="inputs-li">
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck_9"
+          />
+          <label class="custom-control-label" for="customCheck_9">
+            6 Person <span class="quantity">(16)</span>
+          </label>
+        </div>
+      </li>
+      <li class="inputs-li">
+        <div class="custom-control custom-checkbox">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customCheck_10"
+            checked
+          />
+          <label class="custom-control-label" for="customCheck_10">
+            8 Person <span class="quantity">(20)</span>
+          </label>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-section">
+    <p class="section-title">type</p>
+    <div class="form-group">
+      <input
+        type="range"
+        class="form-control-range mb-4"
+        id="formControlRange"
+      />
+      <label for="formControlRange">Max. $100.00</label>
+    </div>
+  </div>
+</div>
+ <div class="content p-4 w-100">
+  <section class="preview row mb-5">
+  <div
+    class="preview-carousel_container col d-flex flex-column align-items-center"
+  >
+    <div class="preview-carousel w-100">
+      <img
+        src="img/preview.png"
+        alt="Preview Image"
+        class="preview-carousel_img faded"
+      />
+    </div>
+    <div class="carousel-content mt-3 d-flex justify-content-between w-100">
+      <img src="img/preview.png" alt="Carousel Image" class="carousel-small" />
+      <img
+        src="img/inside.png"
+        alt="Carousel Image"
+        class="carousel-small mx-2"
+      />
+      <img src="img/inside_2.png" alt="Carousel Image" class="carousel-small" />
+    </div>
+  </div>
+  <div class="preview-desc card p-4 col">
+    <div class="d-flex align-items-center mb-2">
+      <h3 class="desc-title col">Nissan GT - R</h3>
+      <div class="fav-btn_container col d-flex justify-content-end">
+        <img src="img/red-heart.svg" alt="Heart Icon" class="fav-btn" />
+      </div>
+    </div>
+    <div class="reviewers d-flex align-items-center">
+      <img src="img/star.svg" alt="Star Icon" class="review-star mr-1" />
+      <img src="img/star.svg" alt="Star Icon" class="review-star mr-1" />
+      <img src="img/star.svg" alt="Star Icon" class="review-star mr-1" />
+      <img src="img/star.svg" alt="Star Icon" class="review-star mr-1" />
+      <img src="img/star-empt.svg" alt="Star Icon" class="review-star mr-1" />
+      <p class="reviewers-text mx-2">440+ Reviewer</p>
+    </div>
+    <div class="desc-text">
+      NISMO has become the embodiment of Nissan's outstanding performance,
+      inspired by the most unforgiving proving ground, the "race track".
+    </div>
+    <div class="features-container d-flex flex-column">
+      <div class="row">
+        <div class="col d-flex justify-content-between">
+          <p class="features">Type Car</p>
+          <p class="features-desc">Sport</p>
+        </div>
+        <div class="col d-flex justify-content-between">
+          <p class="features">Capacity</p>
+          <p class="features-desc">2 Person</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-between">
+          <p class="features">Steering</p>
+          <p class="features-desc">Manual</p>
+        </div>
+        <div class="col d-flex justify-content-between">
+          <p class="features">Gasoline</p>
+          <p class="features-desc">70L</p>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-container d-flex">
+      <div class="col">
+        <div class="d-flex align-items-center">
+          <h3 class="pricing">$80.00/</h3>
+          <span class="per-day">days</span>
+        </div>
+        <p class="discount">$100.00</p>
+      </div>
+      <div class="col d-flex justify-content-end">
+        <button type="button" class="rent btn btn-primary px-5">
+          Rent Now
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="reviews mb-5">
+  <div class="card p-3">
+    <div class="reviews-header d-flex mb-4">
+      <p class="reviews-title mr-3">Reviews</p>
+      <div class="reviews-count btn btn-primary">13</div>
+    </div>
+    <div class="reviews-list mb-3" id="reviewsList"></div>
+    <div
+      class="show-list d-flex align-items-center justify-content-center"
+      id="showList"
+    >
+      <p class="show-text">Show All</p>
+      <img src="img/arrow.svg" alt="Arrow Icon" class="arrow mx-2" />
+    </div>
+  </div>
+</section>
+
+  <section class="cars-section mb-5">
+  <div class="d-flex justify-content-between mb-3">
+    <div class="cars-section_title mx-4">Recent Car</div>
+    <div class="view-btn mx-4" id="recentView">View All</div>
+  </div>
+  <div class="recent-cars_list" id="recentList"></div>
+</section>
+
+  <section class="cars-section">
+  <div class="d-flex justify-content-between mb-3">
+    <div class="cars-section_title mx-4">Recommendation Car</div>
+    <div class="view-btn mx-4" id="recommendationView">View All</div>
+  </div>
+  <div class="recent-cars_list" id="recommendationList"></div>
+</section>
+
+</div>
+
+    </main>
+    <footer class="py-5 faded">
+  <div class="container">
+    <div class="d-flex footer-row pb-4 mb-5">
+      <div class="col">
+        <a href="#">
+          <img src="img/Logo.svg" alt="Logo" class="logo mb-3" />
+        </a>
+        <p class="footer-text">
+          Our vision is to provide convenience and help increase your sales
+          business.
+        </p>
+      </div>
+      <div class="d-flex col footer-links">
+        <div class="col">
+          <div class="footer-title mb-3">About</div>
+          <ul class="footer-list">
+            <li class="footer-li">
+              <a href="#">How it works</a>
+            </li>
+            <li class="footer-li">
+              <a href="#">Featured</a>
+            </li>
+            <li class="footer-li">
+              <a href="#">Partnership</a>
+            </li>
+            <li class="footer-li">
+              <a href="#">Business Relation</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="footer-title mb-3">Community</div>
+          <ul class="footer-list">
+            <li class="footer-li">
+              <a href="#">Events</a>
+            </li>
+            <li class="footer-li">
+              <a href="#">Blog</a>
+            </li>
+            <li class="footer-li">
+              <a href="#">Podcast</a>
+            </li>
+            <li class="footer-li">
+              <a href="#">Invite a friend</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="footer-title mb-3">Socials</div>
+          <ul class="footer-list">
+            <li class="footer-li">
+              <a href="#">Discord</a>
+            </li>
+            <li class="footer-li">
+              <a href="#">Instagram</a>
+            </li>
+            <li class="footer-li">
+              <a href="#">Twitter</a>
+            </li>
+            <li class="footer-li">
+              <a href="#">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-row d-flex justify-content-between">
+      <p class="rights">©2022 MORENT. All rights reserved</p>
+      <div class="regulations-container d-flex align-items-center">
+        <a href="#" class="regulation mr-5">Privacy & Policy</a>
+        <a href="#" class="regulation">Terms & Condition</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/app.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
