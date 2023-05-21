@@ -5,9 +5,6 @@
    License: none (public domain)
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;
-
-500;600;700&display=swap");
 html,
 body,
 div,
@@ -7838,8 +7835,12 @@ footer .container .footer-row .regulations-container > a:hover {
 }
 
 body {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
   letter-spacing: 0.02em;
+}
+
+body * {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 
 body .container {
