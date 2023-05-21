@@ -1,6 +1,9 @@
 // Reset
 @import "./reset";
 
+// Skeleton
+@import "./skeleton";
+
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -34,6 +37,7 @@ body {
     from {
       opacity: 0.1;
     }
+
     to {
       opacity: 1;
     }

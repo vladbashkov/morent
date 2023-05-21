@@ -24,7 +24,9 @@ const carousel = () => {
       const target = e.target;
 
       if (!target.classList.contains("carousel-active")) {
-        let previewCarouselIMG = document.querySelector(".preview-carousel_img");
+        let previewCarouselIMG = document.querySelector(
+          ".preview-carousel_img"
+        );
         previewCarouselIMG.remove();
 
         removeActive();

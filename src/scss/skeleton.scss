@@ -1,0 +1,63 @@
+.skeleton {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(90deg, #a0b5ff, #eff3fd, #a0b5ff);
+    background-size: 200%;
+    border-radius: 10px;
+    animation: skeleton 2s infinite reverse;
+  }
+
+  &.skeleton-logo {
+    &::before {
+      left: -3%;
+    }
+  }
+
+  &.skeleton-circle {
+    &::before {
+      border-radius: 50% !important;
+    }
+  }
+
+  &.skeleton-btn {
+    &::before {
+      width: 115%;
+      height: 120%;
+      left: -10%;
+      top: -10%;
+    }
+  }
+
+  &.skeleton-gas {
+    &::before {
+      width: 105%;
+      left: -5%;
+    }
+  }
+
+  &.skeleton-logo_footer {
+    &::before {
+      width: 115%;
+      height: 135%;
+      left: -5%;
+      top: -5%;
+    }
+  }
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}

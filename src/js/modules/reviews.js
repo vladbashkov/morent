@@ -1,3 +1,5 @@
+import skeleton from "./skeleton.js";
+
 const reviewsArr = [
   {
     name: "Alex Stanton",
@@ -131,7 +133,7 @@ const reviews = () => {
                         />`);
       }
     }
-    return `<div class="review-rating">
+    return `<div class="review-rating skeleton">
               ${ratingArr.join("")}
             </div>`;
   };
@@ -143,24 +145,32 @@ const reviews = () => {
           return;
         }
         return `<div class="review-card d-flex faded">
-                  <img
-                    src="${
-                      i % 2 ? "img/account-pic_w.png" : "img/account-pic.png"
-                    }"
-                    alt="Account Picture"
-                    class="account-pic mr-3"
-                  />
+                  <div>
+                    <div class="skeleton skeleton-circle mr-3">
+                      <img 
+                        src="${
+                          i % 2
+                            ? "img/account-pic_w.png"
+                            : "img/account-pic.png"
+                        }"
+                        alt="Account Picture"
+                        class="account-pic"
+                      />
+                    </div>
+                  </div>
                   <div class="review-content w-100">
                     <div class="review-row d-flex justify-content-between mb-3">
-                      <div class="reviews-title">${elem.name}</div>
-                      <div class="review-date">${elem.date}</div>
+                      <div class="reviews-title skeleton">${elem.name}</div>
+                      <div class="review-date skeleton">${elem.date}</div>
                     </div>
                     <div class="review-row d-flex justify-content-between mb-3">
-                      <div class="review-position">${elem.position}</div>
+                      <div class="review-position skeleton">${
+                        elem.position
+                      }</div>
                       ${getRatings(elem.rating)}
                     </div>
                     <div class="review-row">
-                      <p class="review-comment">
+                      <p class="review-comment skeleton">
                         ${elem.comment}
                       </p>
                     </div>
@@ -168,7 +178,6 @@ const reviews = () => {
                 </div>`;
       })
       .join("");
-
     return reviews;
   };
 
@@ -186,6 +195,7 @@ const reviews = () => {
       showText.innerText = "Show Less";
       arrow.style.transform = "rotate(180deg)";
     }
+    skeleton();
   });
 };
 
