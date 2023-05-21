@@ -7,9 +7,6 @@
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Fonts
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
-
 // Variables
 @import "./variables";
 
@@ -20,8 +17,12 @@
 @import "./footer";
 
 body {
-  font-family: $main-font;
+  font-family: $main-font !important;
   letter-spacing: 0.02em;
+
+  * {
+    font-family: $main-font !important;
+  }
 
   .container {
     width: 90%;
