@@ -90,7 +90,7 @@ const viewCars = (listSelector, buttonSelector, data) => {
       button.innerText = "View Less";
       favBtn();
     }
-    skeleton();
+    skeleton(true);
   });
 };
 

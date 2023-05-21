@@ -195,7 +195,7 @@ const reviews = () => {
       showText.innerText = "Show Less";
       arrow.style.transform = "rotate(180deg)";
     }
-    skeleton();
+    skeleton(true);
   });
 };
 
